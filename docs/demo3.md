@@ -1,0 +1,1 @@
+对于公共文件打包，通过CommonsChunkPlugin这个插件对于公共的库进行打包。

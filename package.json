@@ -10,9 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "style-loader": "^0.13.2",
     "webpack": "^2.2.1"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1"
   }
 }
