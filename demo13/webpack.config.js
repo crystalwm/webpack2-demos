@@ -30,7 +30,7 @@ module.exports = function(env) {
             new webpack.optimize.CommonsChunkPlugin({ names: ['vendor', 'manifest'] }),
             new ExtractTextPlugin("styles.css"),
             new HtmlWebpackPlugin({ template: './index.html' }),
-            new WebpackChunkHash({ algorithm: 'md5' }), // 'md5' is default value
+            //    new WebpackChunkHash({ algorithm: 'md5' }), // 'md5' is default value
             new ChunkManifestPlugin({
                 filename: "manifest.json",
                 manifestVariable: "webpackManifest"
