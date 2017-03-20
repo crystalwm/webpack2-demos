@@ -6,6 +6,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = function(env) {
     return {
         devtool: "cheap-eval-source-map",
+        devServer: {
+            proxy: {
+                "/api": "http://127.0.0.1:50545",
+            }
+        },
         entry: {
             main: ['./index.js'],
             vender: ['./vender.js']
