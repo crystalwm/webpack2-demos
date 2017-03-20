@@ -7,11 +7,11 @@ module.exports = function(env) {
     return {
         devtool: "cheap-eval-source-map",
         entry: {
-            main: './index.js',
-            vender: './vender.js'
+            main: ['./index.js'],
+            vender: ['./vender.js']
         },
         output: {
-            filename: '[chunkhash].[name].js',
+            filename: '[hash].[name].js',
             path: path.resolve(__dirname, 'dist')
         },
         module: {
