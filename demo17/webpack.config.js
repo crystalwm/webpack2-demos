@@ -1,6 +1,8 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
+
 
 
 module.exports = function(env) {
@@ -27,11 +29,15 @@ module.exports = function(env) {
                 })
             }]
         },
-
+        resolve: {
+            alias: {
+                jquery: "./library/jquery-3.2.0.js"
+            }
+        },
         plugins: [
             new ExtractTextPlugin('styles.css'),
-            new HtmlWebpackPlugin({ template: './index.html' })
+            new HtmlWebpackPlugin({ template: './index.html' }),
+            new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' })
         ]
     }
-
 }
