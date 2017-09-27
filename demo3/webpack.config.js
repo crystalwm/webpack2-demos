@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = function(env) {
     return {
         entry: {
-            main: './index.js',
+            main: './demo3/index.js',
             vendor: 'moment'
         },
         output: {
