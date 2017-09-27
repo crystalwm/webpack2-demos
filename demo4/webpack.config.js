@@ -5,8 +5,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = function(env) {
     return {
         entry: {
-            main: './index.js',
-            vender: './vender.js'
+            main: './demo4/index.js',
+            vender: './demo4/vender.js'
         },
         output: {
             filename: '[chunkhash].[name].js',
