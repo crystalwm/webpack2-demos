@@ -1,5 +1,4 @@
 var path = require('path');
-var AssetsPlugin = require('assets-webpack-plugin');
 var WebpackChunkHash = require('webpack-chunk-hash');
 
 
@@ -8,8 +7,8 @@ var WebpackChunkHash = require('webpack-chunk-hash');
 module.exports = function(env) {
     return {
         entry: {
-            main: './index.js',
-            vender: './vender.js'
+            main: './demo9/index.js',
+            vender: './demo9/vender.js'
         },
         output: {
             filename: '[chunkhash].[name].js',
