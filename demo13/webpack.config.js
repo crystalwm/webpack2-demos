@@ -10,8 +10,8 @@ var webpack = require('webpack');
 module.exports = function(env) {
     return {
         entry: {
-            main: './index.js',
-            vender: './vender.js'
+            main: './demo13/index.js',
+            vender: './demo13/vender.js'
         },
         output: {
             filename: '[chunkhash].[name].js',
@@ -29,7 +29,7 @@ module.exports = function(env) {
         plugins: [
             new webpack.optimize.CommonsChunkPlugin({ names: ['vendor', 'manifest'] }),
             new ExtractTextPlugin("styles.css"),
-            new HtmlWebpackPlugin({ template: './index.html' }),
+            new HtmlWebpackPlugin({ template: './demo13/index.html' }),
             //    new WebpackChunkHash({ algorithm: 'md5' }), // 'md5' is default value
             new ChunkManifestPlugin({
                 filename: "manifest.json",
