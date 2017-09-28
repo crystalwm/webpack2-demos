@@ -8,8 +8,8 @@ var webpack = require('webpack');
 module.exports = function(env) {
     return {
         entry: {
-            main: './index.js',
-            vender: './vender.js'
+            main: './demo11/index.js',
+            vender: './demo11/vender.js'
         },
         output: {
             filename: '[chunkhash].[name].js',
@@ -17,7 +17,7 @@ module.exports = function(env) {
         },
         plugins: [
             new webpack.optimize.CommonsChunkPlugin({ names: ['vendor', 'manifest'] }),
-            new HtmlWebpackPlugin({ template: './index.html' }),
+            new HtmlWebpackPlugin({ template: './demo11/index.html' }),
             new InlineManifestWebpackPlugin({ name: 'webpackManifest' })
         ]
     }
