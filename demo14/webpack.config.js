@@ -7,8 +7,8 @@ module.exports = function(env) {
     return {
         devServer: { contentBase: path.join(__dirname, "dist"), compress: true, port: 9000 },
         entry: {
-            main: './index.js',
-            vender: './vender.js'
+            main: './demo14/index.js',
+            vender: './demo14/vender.js'
         },
         output: {
             filename: '[chunkhash].[name].js',
@@ -24,7 +24,7 @@ module.exports = function(env) {
         },
         plugins: [
             new ExtractTextPlugin('styles.css'),
-            new HtmlWebpackPlugin({ template: './index.html' })
+            new HtmlWebpackPlugin({ template: './demo14/index.html' })
         ]
     }
 
