@@ -1,5 +1,4 @@
 var path = require('path');
-var AssetsPlugin = require('assets-webpack-plugin');
 var ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 
 
@@ -7,8 +6,8 @@ var ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 module.exports = function(env) {
     return {
         entry: {
-            main: './index.js',
-            vender: './vender.js'
+            main: './demo8/index.js',
+            vender: './demo8/vender.js'
         },
         output: {
             filename: '[chunkhash].[name].js',
