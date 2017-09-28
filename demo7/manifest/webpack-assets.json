@@ -1,1 +1,1 @@
-window.staticMap = {"main":{"js":"e8ae4ff38ee2fff13cb6.main.js"},"vender":{"js":"0877f0b45a79263e85d8.vender.js"},"metadata":{"version":123}}
+window.staticMap = { "main": { "js": "13b841120351ddaf7527.main.js" }, "vender": { "js": "bf226561b2c07c84609a.vender.js" }, "metadata": { "version": 123 } }

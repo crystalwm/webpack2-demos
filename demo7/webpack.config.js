@@ -12,8 +12,8 @@ var assetsPluginInstance = new AssetsPlugin({
 module.exports = function(env) {
     return {
         entry: {
-            main: './index.js',
-            vender: './vender.js'
+            main: './demo7/index.js',
+            vender: './demo7/vender.js'
         },
         output: {
             filename: '[chunkhash].[name].js',
