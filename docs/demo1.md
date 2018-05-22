@@ -15,5 +15,5 @@ webpack index.js dist/bundle.js
 
 **方法二**
 ```
-webpack --config webpack.config.js
+webpack --config  ./config/webpack.config.js
 ```
